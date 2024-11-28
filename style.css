@@ -130,9 +130,11 @@ body {
 
 .inp input {
   width: 450px;
-  padding: 15px 10px;
+  padding: 15px 10px 16px 10px;
   margin: 10px;
-  border-radius: 7px;
+  /* border-radius: 7px; */
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
   border-bottom: 1px solid rgb(223, 223, 223);
   border-top: 1px solid rgb(223, 223, 223);
   border-left: 1px solid rgb(223, 223, 223);
@@ -160,13 +162,13 @@ body {
   display: flex;
   align-items: center;
 
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
 }
 .location {
   border: 1px solid rgb(233, 233, 233);
   align-items: center;
   display: flex;
-  padding: 10px 10px;
+  padding: 11px 10px;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
 
@@ -199,6 +201,8 @@ body {
   font-size: 30px;
   margin-top: 60px;
   margin-left: 70px;
+  /* position: relative;
+  left: 70px; */
   font-weight: 700;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -342,11 +346,16 @@ body {
   height: 320px;
   /* overflow: hidden; */
 }
+.banner-text {
+  position: relative;
+  right: 90px;
+}
 .head {
   font-size: 22px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: white;
+  font-weight: 800;
   padding: 50px 30px 40px 30px;
 }
 .qr img {
@@ -382,13 +391,18 @@ body {
 
 .card-heading4 {
   font-size: 30px;
-  margin-top: 65px;
-  margin-bottom: 30px;
+
   font-weight: 700;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: black;
   padding: 10px 60px;
+  margin-top: 65px;
+
+  margin-bottom: 30px;
+}
+.card-heading4 span {
+  /* margin-top: ; */
 }
 
 .banner-image {
@@ -539,4 +553,9 @@ body {
 .foodpanda {
   position: relative;
   top: 30px;
+}
+
+.max-width-container {
+  max-width: 1440px;
+  margin: 0px auto;
 }
